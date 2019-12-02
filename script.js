@@ -8,11 +8,22 @@ let appData = {
     income: [],
     savings: false
 }
-optionalExpenses = prompt("Введите обязательную статью расходов в этом месяце");
-income = prompt("Во сколько обойдется?");
-expenses: {
-    optionalExpenses,
-    income
+
+let i = 0;
+while (i < 2){
+    let a1 = +prompt("Введите обязательную статью расходов в этом месяце"),
+    a2 = +prompt("Во сколько обойдется?");
+    if (typeof(a1) != "number" || typeof(a2) != "number"){
+        console.log("error");
+    } else{
+
+    
+    if (a1 == '' || a2 == '' ){
+        console.log("error not ''");
+    } else {
+    i++;
+    }
+    }
 }
 
 alert("Бюджет на 1 день равен: " + appData.money / 30);
