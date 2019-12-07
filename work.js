@@ -8,16 +8,6 @@ let obj = {
 }
 
 
-let array = [67,34,12,74,12];
-array.pop();
-console.log(array);
-setTimeout(function(){
-    for(let i = 0; i < 5; i++){
-        console.log(array[i]);
-    }
-},500);
-
-
 
 
 
